@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "css/contact.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<title>Contact page</title>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     
+    </div><!-- end navbar-header -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav" >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Project Links</a></li>
+		<li><a href="blog.html">Blog</a></li>
+		<li><a href = "contact.html" id = "active"><span class="glyphicon glyphicon-envelope"></span>Contact Me</a>
+		</li>
+		  <li><a href = "scss/contact.scss">Contact scss</a></li>
+      </ul><!-- end nav navbar-nav -->
+		<a href="#" class="fa fa-linkedin navbar-right social"></a>
+		<a href="#" class="fa fa-google navbar-right social"></a>
+    </div><!-- end nav collapse -->
+  </div><!--end nav container -->
+</nav>
+	<div class="contact container-fluid">
+			<form>	
+				<h2> Use the Form below to contact me with any questions </h2>
+  <ul class="formcontainer">
+    <li>
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" placeholder="Enter your first name here">
+    </li> 
+    <li>
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" placeholder="Enter your last name here">
+    </li>
+    <li>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email here">
+    </li>
+    <li>
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="Enter your phone here">
+    </li>
+    <li>
+      <label for="message">Message</label>
+      <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+    </li>
+   
+    <li>
+      <button type="submit">Submit</button>
+    </li>
+  </ul><!--end form container -->
+</form>	
+
+</div><!-- end div third-->
+    <div class="footer">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+    </div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</body>
+</html>

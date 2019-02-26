@@ -1,0 +1,13 @@
+/* Scss Document */
+
+@mixin smallzoom {transform: scale(1.1);
+	  -webkit-transition: all ease-out 600ms;
+      -moz-transition: all ease-out 600ms;
+      -o-transition: all ease-out 600ms;
+      transition:all ease-out 600ms;}
+@mixin transition600{	  		
+			-webkit-transition: all ease-out 600ms;
+      		-moz-transition: all ease-out 600ms;
+     	 	-o-transition: all ease-out 600ms;
+      		transition:all ease-out 600ms;}
+  

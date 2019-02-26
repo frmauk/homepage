@@ -1,0 +1,238 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<link rel = "stylesheet" type = "text/css" href = "css/homepage.css">	
+	
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	
+		<!-- begin javascript -->
+	<script>
+// When the user scrolls down 20px from the top of the document, show the button
+
+			
+			
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+</script>
+	
+	<title> Faith Mauk </title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     
+    </div><!-- end navbar-header -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <!--<ul class="nav navbar-nav" >
+        <li><a href="index.html" id = "active">Home</a></li>
+        <li><a href="gallery.html">Project Links</a></li>
+		<li><a href="blog.html">Blog</a></li>
+		<li><a href = "contact.html"><span class="glyphicon glyphicon-envelope"></span>Contact Me</a></li>
+		-<li><a href = "homework/homework.html"> Homework links </a></li>
+		<li><a href ="Better_Idea/index.html"> mom page </a></li> 
+      </ul><!-- end nav navbar-nav --> 
+		<ul class="nav navbar-nav" >
+        <li><a href="gallery.html">Project gallery</a></li>
+		<li><a href="blog.html">Blog</a></li>
+		</ul>
+		<a href="http://www.linkedin.com/in/faithmauk" class="fa fa-linkedin navbar-right social"></a>
+		<!-- <a href="#" class="fa fa-google navbar-right social"></a> -->
+    </div><!-- end nav collapse -->
+  </div><!--end nav container -->
+</nav>
+	
+<a name = "top"></a>
+<div class = "jumbotron  first">
+	<div class= "brand">
+	<h1> Faith Mauk</h1>
+	<p> Web Development Student</p>
+	</div><!-- end div brand -->
+</div><!-- end div jumbotron -->
+	
+	
+<div class = "container-fluid">
+<div class = "row row-eq-height">
+	<div class = "row row-eq-height col-sm-4 col-sm-push-4">
+		<div class = "info sum">
+		<h2> About Me</h2>
+			<p>I am currently a Web Development Student at Des Moines Area Community College, working towards my first associates degree. </p>
+			<p> I am comfortable working with HTML, CSS, SCSS, and some javscript. When I encounter a problem I am unfamiliar with, I have no problem researching until I find a solution<span id = "continue">...</span></p>
+		<div id = "sum" class = "collapse">
+			<p>I am a very fast learner, and always eager to learn something new. I believe learning is a lifelong journey, especially in the world of Web Development where things are changing everyday.</p>
+			<p>My first exposure to the woderful world of web development came in the early days of the internet, editing my MySpace page as a young teenager. Since then, the web has come a long way, as have I.</p>
+			<p> I am eager to get out into the world and put my skills and knowledge to the test!</p>
+		</div><!-- end div SUM -->
+			<div id = "readmore" onClick="readMoreLess2()"><p>Read More</p></div>
+		</div><!-- end info column 2 -->
+	</div><!-- end div row -->
+	
+<div class = "row row-eq-height col-sm-4 col-sm-pull-4 ">
+	<div class = "info edu">
+		<h2>Education & Skills</h2>
+		<ul>
+			<li><h3> Associates in Web Development</h3>
+				<h4> In Progress</h4>
+				<p> Des Moines Area Community College</p>
+			</li>
+			
+			<li><h3>University of Nebraska at Omaha</h3>
+				<p> 2009-2011<span id = "dots"></span></p></li>
+		</ul>
+		    <ul id = "skills">
+				<li><h2  class = "skills edu" >Skills </h2></li>
+				<li><h3>Competent in:</h3></li>
+				<li><p>HTML</p></li>
+				<li><p>CSS and SASS</p></li>
+				<li><p>Bootstrap</p></li>
+				<li><p>WordPress</p></li>
+		</ul>
+		<div id="collapse" onclick = "readMoreLess()"><h3>Click here for skills</h3></div>
+	</div><!-- end info column 1 -->
+	</div><!-- end div row -->	
+	
+
+	
+<div class = "row row-eq-height col-sm-4" id = "techcol">
+	<div class = "info tech">
+		<h2> Contact me today! </h2>
+			<form method="post" action="formEmailer.php" class = "form-horizontal" id = "contact_form" >	
+				<div class="form-group">
+				  <label class="control-label col-sm-4 text-left" for="email">Email:</label>
+				  <div class="col-sm-8">
+					<input type="email" class="form-control" id="email" placeholder="janedoe@example.com" name="email">
+				  </div><!--end input box for email -->
+				</div><!-- end div form group for email -->
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-4" for="firstname">First Name</label>
+				  <div class="col-sm-8">
+					<input type="text" class="form-control" id="firstname" placeholder="Jane" name="firstname">
+				  </div><!--end input box for firstname -->
+				</div><!-- end div form group for firstname-->
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-4" for="lastname">Last Name</label>
+				  <div class="col-sm-8">
+					<input type="text" class="form-control" id="lastname" placeholder="Doe" name="lastname">
+				  </div><!--end input box for lastname -->
+				</div><!-- end div form group for lastname-->
+				
+				<div class="form-group">
+				  <label class="control-label col-sm-4" for="message">Your message</label>
+				  <div class="col-sm-8">
+					<textarea type="text" class="form-control" id="message" placeholder="Write your message here..." name="message"></textarea>
+				  </div><!--end input box for lastname -->
+				</div><!-- end div form group for lastname-->
+				
+				<div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default">Submit</button>
+				  </div>
+				</div>
+			</form>	
+		
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Your message has been sent! we will get back to you as soon as possible!</h3>
+        </div><!-- end success message -->
+        <div id="error_message"
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+
+        </div><!-- end div error message -->
+		<!--<p id = "tech" class = "collapse"> Maecenas quis urna in lorem blandit elementum at sit amet nisi. Morbi consequat, velit ac tristique vehicula, nisi elit auctor eros, non rutrum urna quam in ipsu</p>
+		<a href="#tech" data-toggle="collapse">Read More</a> Uncommenting this will allow the "read more" button to display more content--> 
+	</div><!-- end info column 2 -->
+</div><!-- end div row -->
+</div><!-- end div row -->
+	
+</div><!-- end container-->
+
+    <div class="footer text-center">Faith Mauk 2018
+    </div>
+	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	
+<script>
+	function readMoreLess() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("skills");
+  var btnText = document.getElementById("collapse");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "<h3>Click here for skills</h3>"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<h3>Read less</h3>"; 
+    moreText.style.display = "block";
+  }
+	}	
+	
+		function readMoreLess2() {
+  var dots = document.getElementById("continue");
+  var moreText = document.getElementById("sum");
+  var btnText = document.getElementById("readmore");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "<p>Read More</p>"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "<p>Read less</p>"; 
+    moreText.style.display = "block";
+  }
+	}
+	
+	
+	</script>
+	
+	
+</body>
+</html>	
+	
+	
+	
+	
+	
+	

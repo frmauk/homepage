@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "css/gallery.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<title>Project Gallery</title>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     
+    </div><!-- end navbar-header -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav" >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" id = "active">Project Links</a></li>
+		<li><a href="blog.html">Blog</a></li>
+		<li><a href = "contact.html"><span class="glyphicon glyphicon-envelope"></span>Contact Me</a></li>
+		  <li><a href = "scss/gallery.scss"> Gallery SCSS </a></li>
+      </ul><!-- end nav navbar-nav -->
+		<a href="#" class="fa fa-linkedin navbar-right social"></a>
+		<a href="#" class="fa fa-google navbar-right social"></a>
+    </div><!-- end nav collapse -->
+  </div><!--end nav container -->
+</nav>
+	
+	<div class = "container-fluid maincontainer">
+		<div class = "col-sm-3 first">
+			<h1>Project Gallery</h1>
+			<p>This page is still under construction</p>
+		</div><!-- end first column -->
+		
+<div class = "col-sm-9 gallery">
+<div class = "column">
+	<ul class="list-inline">
+  		<li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="0">
+	  		<img class="img-thumbnail" src="img/homescreen.JPG" alt = "homescreen" width = "100%">
+	  		<br>Personal Homepage</a>
+		</li>
+				
+  		<li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="1">	
+	  		<img class="img-thumbnail" src="img/adexample.JPG" alt = "Ad Example" width = "100%">
+	  		<br>Advertisement Example</a>
+		</li>		
+	</ul>
+		
+</div><!-- end first column -->
+	
+<div class = "column">
+	<ul class = "list-inline">
+  		<li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="2">
+	      <img class="img-thumbnail" src="img/homeworkpage.JPG" alt = "homework page" width = "100%">
+	  	  <br>Homework Page</a>
+  		</li>
+				
+  		<li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="3">
+	  	  <img class="img-thumbnail" src="img/betterideaflag.JPG" alt = "better idea flag page" width = "100%">
+	  	  <br>Better Idea Flag Repair</a>
+  		</li>
+	</ul>
+</div><!-- end second column -->
+	
+<div class = "column">
+	<ul class="list-inline">
+  	   <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="4">
+	  		<img class="img-thumbnail" src="img/bootstrappage.JPG" alt = "first bootstrap page" width = "100%">
+	  		<br>first Bootstrap Page</a>
+	   </li>
+				
+  		<li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="5">	
+	  		<img class="img-thumbnail" src="img/homescreen.JPG" alt = "homescreen" width = "100%">
+	  		<br>Personal</a>
+	    </li>
+	</ul>
+</div><!-- end third column -->
+	
+<div class = "column">
+	<ul class = "list-inline">
+		<li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="6">
+	  		<img class="img-thumbnail" src="img/homeworkpage.JPG" alt = "homework page" width = "100%">
+	  		<br>Homework page</a>
+		</li>
+			
+  		<li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="7">
+	  		<img class="img-thumbnail" src="img/teamad.JPG" alt = "team ad" width = "100%">
+	  		<br>Team Advertising Project</a>
+		</li>
+	</ul>	
+</div><!-- end fourth column -->
+	
+<!--end of thumbnails-->
+
+	<!--begin modal window-->
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="pull-left">Project Gallery</div>
+				<button type="button" class="close" data-dismiss="modal" title="Close"> 
+				<span class="glyphicon glyphicon-remove"></span>
+				</button>
+			</div><!-- end div modal header -->
+	
+<div class="modal-body">
+<!--CAROUSEL CODE GOES HERE-->
+<!--begin carousel-->
+<div id="myGallery" class="carousel slide" data-interval="false">
+	<div class="carousel-inner">
+		<div class="item active"> <img src="img/homescreen.JPG" alt="item0">
+				<caption class="carousel-caption" align="bottom">
+				<a href ="index.html"><h3>Personal Homepage</h3></a>
+				<p>My homepage is built using bootstrap and custom styling using SCSS</p>
+				</caption><!-- end item caption -->
+		</div><!--end div item active -->
+	
+		<div class="item"> <img src="img/adexample.JPG" alt="item1">
+				<caption class="carousel-caption">
+				<a href = "http://faithmauk.com/wdv205/advertisingeffect/advertisingeffect.html">
+					<h3 class = "caption">Advertisement Example</h3>
+				</a>
+				<p>This advertisement demonstrates CSS animations</p>
+				</caption><!-- end item caption -->
+		</div><!-- end div item -->
+	
+		<div class="item"> <img src="img/homeworkpage.JPG" alt="item2">
+				<caption class="carousel-caption">
+				<a href = "http://faithmauk.com"><h3>Homework Page</h3></a>
+				<p>My homework built using basic media queries to make it responsive</p>
+				</caption><!-- end item caption -->
+		</div><!-- end div item -->
+	
+		<div class="item"> <img src="img/betterideaflag.JPG" alt="item3">
+				<caption class="carousel-caption">
+				<a href = "http://faithmauk.com/wdv205/finalproject/index.html"><h3>Better Idea Flag repair</h3></a>
+				<p>Built using bootstrap and custom styling, this is a simple small business page</p>
+				</caption><!-- end item caption -->
+		</div><!-- end div item -->
+	
+		<div class="item"> <img src="img/bootstrappage.JPG" alt="item4">
+				<caption class="carousel-caption" align="bottom" >
+				<a href ="http://faithmauk.com/wdv205/unit11/bootstrappage.html"><h3>First Bootstrap page</h3></a>
+				<p>built using bootstrap</p>
+				</caption><!-- end item caption -->
+		</div><!-- end carousel item -->
+	
+		<div class="item"> <img src="img/homescreen.JPG" alt="item5">
+				<caption class="carousel-caption">
+					<a href ="index.html"><h3>Personal Homepage</h3></a>
+				<p>My homepage is built using bootstrap and custom styling using SCSS</p>
+				</caption><!-- end item caption -->
+		</div><!-- end carousel item -->
+		
+		<div class="item"> <img src="img/homeworkpage.JPG" alt="item6">
+				<caption class="carousel-caption">
+				<a href = "http://faithmauk.com"><h3>Homework Page</h3></a>
+				<p>My homework built using basic media queries to make it responsive</p>
+				</caption><!-- end item caption -->
+		</div><!-- end carousel item -->
+		
+				<div class="item"> <img src="img/teamad.JPG" alt="item7">
+				<caption class="carousel-caption">
+					<a href="http://faithmauk.com/wdv205/unit11/bootstrappage.html"><h3>Team Advertisement</h3></a>
+				<p>This ad was a team project, and uses css animations and transition</p>
+				</caption><!-- end item caption -->
+		</div><!-- end carousel item -->
+		
+	</div><!--end carousel-inner-->
+<!--Begin Previous and Next buttons-->
+	<a class="left carousel-control" href="#myGallery" role="button" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left"></span>
+	</a> 
+	<a class="right carousel-control" href="#myGallery" role="button" data-slide="next"> 
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+			</div><!--end carousel-->
+		
+			</div><!--end modal-body-->
+			<div class="modal-footer">
+					<div class="pull-left">
+						<small>Property of Faith Mauk</small>
+					</div>
+						<button class="btn-sm close" type="button" data-dismiss="modal">Close</button>
+			</div><!--end modal-footer-->
+		</div><!--end modal-content-->
+	</div><!--end modal-dialoge-->
+</div>	<!--end myModal-->	
+</div><!-- end div column 10 -->
+		
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</div><!-- end maincontainer -->
+		<script src="js/jquery-1.11.3.min.js"></script>
+<div class="footer text-center navbar-fixed-bottom">Faith Mauk 2018</div>
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/bootstrap.js"></script>
+		<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "css/resume.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<title>Resume</title>
+</head>
+
+<body>
+			
+  
+
+	
+<a name = "top"></a>
+<div class = "container-fluid">
+
+	  <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+     
+    </div><!-- end navbar-header -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav" >
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="gallery.html">Project Links</a></li>
+		  <li><a href = "contact.html" id = "active"><span class="glyphicon glyphicon-envelope"></span>Contact Me</a></li>
+      </ul><!-- end nav navbar-nav -->
+		<a href="#" class="fa fa-linkedin navbar-right social"></a>
+		<a href="#" class="fa fa-google navbar-right social"></a>
+    </div><!-- end nav collapse -->
+	  </nav>
+
+	
+	<div class = "row">
+		<div class = "col-sm-2"></div>
+				<div class= "col-sm-10 name">
+			<h1> Faith Mauk</h1>
+			<p> Web Development Student</p>
+			</div><!-- end div name-->
+	</div>
+ <div class = "row">
+		<div class = "col-sm-10 col-sm-push-2 blog">
+			<h3>Blog Post 1</h3>
+             <div><img src = "img/adexample.JPG" alt ="ad example" width = "100%"></div>
+			
+			<p>Maecenas quis urna in lorem blandit elementum at sit amet nisi. Morbi consequat, velit ac tristique vehicula, nisi elit auctor eros, non rutrum urna quam in ipsu...</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed dolor eu urna convallis gravida.</p> <p>Maecenas quis urna in lorem blandit elementum at sit amet nisi. Morbi consequat, velit ac tristique vehicula, nisi elit auctor eros, non rutrum urna quam in ipsu...</p>
+				
+		</div><!--resume -->
+	
+ 		<div class = "col-sm-2 col-sm-pull-10 sidebar">
+			<div class= "brand">
+	<h1> Faith Mauk</h1>
+	<p> Web Development Student</p>
+	</div><!-- end div brand -->
+	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed dolor eu urna convallis gravida.</p> <p>Maecenas quis urna in lorem blandit elementum at sit amet nisi. Morbi consequat, velit ac tristique vehicula, nisi elit auctor eros, non rutrum urna quam in ipsu...</p>
+		</div><!-- end sidebar -->
+	</div><!-- end div row -->
+</div><!-- end div main container-fluid -->
+
+	
+	
+	
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

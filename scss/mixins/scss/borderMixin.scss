@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* Scss Document */
+
+@mixin border{border: solid 3px $border;}
+
+@mixin gradientborder{border-bottom: 2px solid transparent;
+	    	    border-image: $borderimage;
+    			border-image-slice: 1;}
